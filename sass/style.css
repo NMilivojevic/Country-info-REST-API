@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#template {
+  display: none;
+}
+
+.card {
+  -webkit-box-shadow: 5px 5px 20px gray;
+          box-shadow: 5px 5px 20px gray;
+  width: 600px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin-top: 50px;
+}
+
+.card .image {
+  width: 100%;
+  height: auto;
+}
+
+.card .image img {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 3px lightblue;
+          box-shadow: 0px 0px 3px lightblue;
+}
+
+.card .content {
+  margin-left: 2em;
+}
+
+.card .content table th {
+  text-align: left;
+}
+
+.card .content table td {
+  text-align: center;
+}
+
+.card .content header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.7em;
+}
+
+.card .content header h2 {
+  margin: 0;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
