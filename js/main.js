@@ -107,7 +107,7 @@ function getTopLevelDomain(array) {
 $("#search").on("keypress", function () {
   const search = this.value;
   if(search.length < 3) return;
-  $.get("https://restcountries.com/v2/name/" + search)
+  $.get("https://serene-tundra-03072.herokuapp.com/https://restcountries.com/v2/name/" + search)
     .done(function (data) {
       $("#list").html("");
       displayCountryInfo(data);
