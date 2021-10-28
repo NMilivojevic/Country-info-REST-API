@@ -51,17 +51,17 @@ function displayCountryInfo(countries) {
 function getFormatedData(name, data) {
   switch (name) {
     case "currencies":
-      return generateTemplate("Valuta", getCurrency(data));
+      return generateTemplate("Currency", getCurrency(data));
     case "languages":
-      return generateTemplate("Jezik", getLanguages(data));
+      return generateTemplate("Language", getLanguages(data));
     case "area":
       return generateTemplate("Region", getArea(data));
     case "population":
-      return generateTemplate("Populacija", getPopulation(data));
+      return generateTemplate("Population", getPopulation(data));
     case "callingCodes":
-      return generateTemplate("Pozivni broj", getCallingCodes(data));
+      return generateTemplate("Area Code", getCallingCodes(data));
     case "topLevelDomain":
-      return generateTemplate("Top Level Domen", getTopLevelDomain(data));
+      return generateTemplate("Top Level Domain", getTopLevelDomain(data));
   }
 }
 

@@ -6,11 +6,18 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  background-color: yellow;
 }
 
 h1 {
   text-align: center;
+  color: #ffffff;
 }
+input {
+  width: 400px;
+  height: 25px;
+}
+
 #template {
   display: none;
 }
@@ -24,6 +31,8 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-top: 50px;
+  background-color: #fff;
+
 
   .image {
     width: 100%;
