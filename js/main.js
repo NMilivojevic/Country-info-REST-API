@@ -106,8 +106,31 @@ function getTopLevelDomain(array) {
 // live search for country
 $("#search").on("keypress", function () {
   const search = this.value;
-  if(search.length < 3) return;
-  $.get("https://serene-tundra-03072.herokuapp.com/https://restcountries.com/v2/name/" + search)
+  console.log(search);
+  if (search.length < 3) return;
+  $.get(
+    "https://serene-tundra-03072.herokuapp.com/https://restcountries.com/v2/name/" +
+      search
+  )
+    .done(function (data) {
+      $("#list").html("");
+      displayCountryInfo(data);
+    })
+    .fail(function (err) {
+      console.log("Doslo je do greske");
+      alert("Doslo je do greske");
+    });
+});
+
+// live search for country
+$("#btn").on("click", function () {
+  const search = document.getElementById('search').value;
+  console.log(search);
+  if (search.length < 3) return;
+  $.get(
+    "https://serene-tundra-03072.herokuapp.com/https://restcountries.com/v2/name/" +
+      search
+  )
     .done(function (data) {
       $("#list").html("");
       displayCountryInfo(data);
